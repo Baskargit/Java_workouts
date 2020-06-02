@@ -1,10 +1,12 @@
 package app;
 
-import java.util.Hashtable;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 // https://practice.geeksforgeeks.org/problems/uncommon-characters/0/
-// 
+// Execution Time:0.38
 
 public class App 
 {
@@ -13,60 +15,53 @@ public class App
 	    Scanner sc = new Scanner(System.in);
 		
 		int testcasecount = sc.nextInt();
-        //sc.nextLine();
+        sc.nextLine();
         
 		while(testcasecount-- > 0)
 		{
-            sc.nextLine();
             String s1 = sc.nextLine();
-            
-            System.out.println("s1 : " + s1);
 
-            //sc.nextLine();
             String s2 = sc.nextLine();
 
-            System.out.println("s2 : " + s2);
-
-            Hashtable<Integer,Character> hashtable = new Hashtable<Integer,Character>();
-
-            StringBuilder outputString = new StringBuilder();
+            HashSet<Character> hashSet1 = new HashSet<Character>();
+            HashSet<Character> hashSet2 = new HashSet<Character>();
             
-            Character character = null;
-            Integer index = -1;
-            for (int i = 0; i < s1.length(); i++)
-            {
-                character = s1.charAt(i);
-                Character result =  hashtable.put(character - 'a', character);
+            hashSet1.addAll(s1.chars().mapToObj(e->(char)e).collect(Collectors.toList()));
+            hashSet2.addAll(s2.chars().mapToObj(e->(char)e).collect(Collectors.toList()));
 
-                // if (result == null) {
-                //     outputString.append(character);
-                // }else {
-                //     index = outputString.indexOf(result.toString());
+            HashSet<Character> hashSet11 = (HashSet<Character>)hashSet1.clone();
+            HashSet<Character> hashSet22 = (HashSet<Character>)hashSet1.clone();
 
-                //     if (index >= 0) {
-                //         outputString = outputString.deleteCharAt(index);
-                //     }
-                    
-                // }
-            }
+            hashSet2.forEach(x -> {
 
-            for (int i = 0; i < s2.length(); i++) 
-            {
-                character = s2.charAt(i);
-                Character result =  hashtable.put(character - 'a', character);
-
-                if (result == null) {
-                    outputString.append(character);
-                }else {
-                    index = outputString.indexOf(result.toString());
-
-                    if (index >= 0) {
-                        outputString = outputString.deleteCharAt(index);
-                    }
+                if (hashSet1.contains(x)) {
+                    hashSet11.remove(x);
+                    hashSet22.remove(x);
+                } else {
+                    hashSet11.add(x);
                 }
-            }
+            });
 
-            System.out.println(outputString);
+            StringBuilder output = new StringBuilder();
+
+            TreeSet<Character> treeSet = new TreeSet<Character>(hashSet11);
+
+            treeSet.forEach(x -> output.append(x));
+
+            System.out.println(output.toString());
 		}
 	 }
 }
+
+/**
+ * 
+Input:
+iaduai
+audsjdsa
+
+Its Correct output is:
+ijs
+
+And Your Code's output is:
+ij
+ */
