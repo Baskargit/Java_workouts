@@ -1,0 +1,9 @@
+Unsolved
+10 => https://practice.geeksforgeeks.org/problems/valid-substring/0
+13 => https://practice.geeksforgeeks.org/problems/game-with-string/0/
+
+
+
+
+Intersting problems
+https://practice.geeksforgeeks.org/problems/count-the-reversals/0
