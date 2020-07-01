@@ -1,9 +1,16 @@
 Unsolved
 10 => https://practice.geeksforgeeks.org/problems/valid-substring/0
 13 => https://practice.geeksforgeeks.org/problems/game-with-string/0/
-
+25 => https://practice.geeksforgeeks.org/problems/closest-strings/0
+30 => https://practice.geeksforgeeks.org/problems/decode-it/0
+32 => https://practice.geeksforgeeks.org/problems/next-greater-even-number/0
+35 => https://practice.geeksforgeeks.org/problems/count-number-of-words/0
+61 => https://practice.geeksforgeeks.org/problems/amount-of-water/0
 
 
 
 Intersting problems
 https://practice.geeksforgeeks.org/problems/count-the-reversals/0
+
+Dynamic Programming problems
+https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents/0

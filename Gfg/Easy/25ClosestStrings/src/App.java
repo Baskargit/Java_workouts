@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+// https://practice.geeksforgeeks.org/problems/closest-strings/0
+// Unsolved
+
 public class App {
     public static void main(String[] args) throws Exception 
     {
@@ -36,7 +39,8 @@ public class App {
                 {
                     for (int i = 0; i < s1Indexes.size(); i++) 
                     {
-                        int abs = Math.abs(s2Indexes.get(0) - s1Indexes.get(i));
+                        int temp = s2Indexes.get(0) - s1Indexes.get(i);
+                        int abs = (temp < 0) ? Math.abs(temp) : temp - 1;
                         minDistsnace = (abs < minDistsnace) ? abs : minDistsnace;
                     }
                 }
@@ -51,7 +55,8 @@ public class App {
                 {
                     for (int i = 0; i < s2Indexes.size(); i++) 
                     {
-                        int abs = Math.abs(s1Indexes.get(0) - s2Indexes.get(i));
+                        int temp = s1Indexes.get(0) - s2Indexes.get(i);
+                        int abs = (temp < 0) ? Math.abs(temp) : temp - 1;
                         minDistsnace = (abs < minDistsnace) ? abs : minDistsnace;
                     }
                 }
