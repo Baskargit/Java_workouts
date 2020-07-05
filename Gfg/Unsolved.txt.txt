@@ -6,11 +6,19 @@ Unsolved
 32 => https://practice.geeksforgeeks.org/problems/next-greater-even-number/0
 35 => https://practice.geeksforgeeks.org/problems/count-number-of-words/0
 61 => https://practice.geeksforgeeks.org/problems/amount-of-water/0
+72 => https://practice.geeksforgeeks.org/problems/maximize-number-of-1s/0
+74 => {DP} https://practice.geeksforgeeks.org/problems/stickler-theif/0
 
+
+TLE
+70 => https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
 
 
 Intersting problems
 https://practice.geeksforgeeks.org/problems/count-the-reversals/0
+https://practice.geeksforgeeks.org/problems/sub-array-sum-divisible-by-k/0
+
 
 Dynamic Programming problems
 https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents/0
+https://practice.geeksforgeeks.org/problems/stickler-theif/0
