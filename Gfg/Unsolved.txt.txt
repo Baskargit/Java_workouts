@@ -8,11 +8,13 @@ Unsolved
 61 => https://practice.geeksforgeeks.org/problems/amount-of-water/0
 72 => https://practice.geeksforgeeks.org/problems/maximize-number-of-1s/0
 74 => {DP} https://practice.geeksforgeeks.org/problems/stickler-theif/0
-
+84 => {DP} https://practice.geeksforgeeks.org/problems/four-elements/0
+86 => https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0
 
 TLE
 70 => https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
-
+77 => https://practice.geeksforgeeks.org/problems/flip-bits/0
+81 => https://practice.geeksforgeeks.org/problems/maximum-occured-integer/0
 
 Intersting problems
 https://practice.geeksforgeeks.org/problems/count-the-reversals/0

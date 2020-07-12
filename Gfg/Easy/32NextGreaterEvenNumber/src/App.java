@@ -1,5 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
 
 // https://practice.geeksforgeeks.org/problems/next-greater-even-number/0
 // Expected Time Limit < 3.208sec
@@ -14,71 +16,41 @@ public class App {
 		while(testcasecount-- > 0)
 		{
             String numString = bi.readLine().trim();
-            int len = numString.length();
-            int sourceCount[] = new int[10];
+            int numLength = numString.length();
 
-            for (int i = 0; i < len; i++) 
+            long number = Long.parseUnsignedLong(numString);
+            
+            long nextGreaterNumber = -1;
+            
+            if (number > 9) 
             {
-                sourceCount[numString.charAt(i) - '0']++;
-            }
+                ArrayList<Long> nextGreaterNumbers = new ArrayList<Long>();
 
-            long number = Long.parseLong(numString);
-            long tempNum = number + 1;
-                        
-            boolean isFound = false;
-            long nextGreaterNum = 0;
-
-            while (true) 
-            {
-                if (tempNum % 2 == 0) 
+                // For selection
+                for (int i = 0; i < numLength; i++) 
                 {
-                    char array[] = String.valueOf(tempNum).toCharArray();
-
-                    if (array.length == len) 
+                    for (int j = 0; j < numLength; j++) 
                     {
-                        if (isNextGreaterNum(number, sourceCount, tempNum)) 
+                        for (int k = 0; k < numLength; k++) 
                         {
-                            isFound = true;
-                            nextGreaterNum = tempNum;
-                            break;
+
                         }
                     }
-                    else
-                    {
-                        break;
-                    }
                 }
-                tempNum++;
+
+                if (nextGreaterNumbers.size() > 0) 
+                {
+                    Collections.sort(nextGreaterNumbers);
+                    
+                    nextGreaterNumber = nextGreaterNumbers.iterator().next().longValue();
+                }
             }
             
 
-            System.out.println(isFound ? nextGreaterNum : -1);
+            System.out.println(nextGreaterNumber);
 		}
 		
 		bi.close();
     }
 
-    public static boolean isNextGreaterNum(long sourceNum,int sourceCount[],long currentNum)
-    {
-        String str = String.valueOf(currentNum);
-        int len = str.length();
-        int count[] = new int[10];
-
-        boolean result = true;
-
-        for (int i = 0; i < len; i++) 
-        {
-            count[str.charAt(i) - '0']++;
-        }
-
-        for (int i = 0; i < 10; i++) 
-        {
-            if (count[i] != sourceCount[i]) 
-            {
-                return false;    
-            }
-        }
-
-        return result;
-    }
 }
