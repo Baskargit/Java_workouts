@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+// https://practice.geeksforgeeks.org/problems/valid-substring/0
+// Execution Time:0.2
+
 public class App {
     public static void main(String[] args) throws Exception 
     {
@@ -13,22 +16,36 @@ public class App {
 		{
             char input[] = bi.readLine().toCharArray();
             
-            Stack<Character> stack = new Stack<Character>();
-
             int longestLength = 0;
             for (int i = 0; i < input.length; i++) 
             {
-                if (input[i] == '(') 
+                int tempLen = 0;
+                Stack<Character> stack = new Stack<Character>();
+                stack.push(input[i]);
+
+                for (int j = i+1; j < input.length; j++) 
                 {
-                    stack.push(input[i]);
-                }
-                else {
-                    stack.pe
-                    if (stack.size() > 0) {
-                        longestLength += 2;
-                        stack.pop();
+                    if (input[j] == '(') 
+                    {
+                        stack.push(input[i]);
                     }
+                    else 
+                    {
+                        if (!stack.isEmpty() && stack.peek() == '(') 
+                        {
+                            stack.pop();
+                            tempLen += 2;
+                        }
+                        else
+                        {
+                            stack.push(')');
+                        }
+                    }
+
+                    longestLength = (stack.isEmpty() && tempLen > longestLength) ? tempLen : longestLength;
                 }
+
+                
             }
 
             System.out.println(longestLength);
@@ -37,3 +54,14 @@ public class App {
 		bi.close();
     }
 }
+
+/*
+Input:
+)()()()))((((()()())(()()())(())((
+
+Its Correct output is:
+20
+
+And Your Code's output is:
+0
+*/

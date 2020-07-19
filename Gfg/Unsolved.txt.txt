@@ -1,5 +1,5 @@
 Unsolved
-10 => https://practice.geeksforgeeks.org/problems/valid-substring/0
+10 => https://practice.geeksforgeeks.org/problems/valid-substring/0 => Solved
 13 => https://practice.geeksforgeeks.org/problems/game-with-string/0/
 25 => https://practice.geeksforgeeks.org/problems/closest-strings/0
 30 => https://practice.geeksforgeeks.org/problems/decode-it/0
@@ -8,8 +8,9 @@ Unsolved
 61 => https://practice.geeksforgeeks.org/problems/amount-of-water/0
 72 => https://practice.geeksforgeeks.org/problems/maximize-number-of-1s/0
 74 => {DP} https://practice.geeksforgeeks.org/problems/stickler-theif/0
-84 => {DP} https://practice.geeksforgeeks.org/problems/four-elements/0
+84 => {DP} https://practice.geeksforgeeks.org/problems/four-elements/0 => Solved {BruteForce approach}
 86 => https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0
+104 => https://practice.geeksforgeeks.org/problems/decode-the-string/0
 
 TLE
 70 => https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
@@ -19,8 +20,39 @@ TLE
 Intersting problems
 https://practice.geeksforgeeks.org/problems/count-the-reversals/0
 https://practice.geeksforgeeks.org/problems/sub-array-sum-divisible-by-k/0
+https://practice.geeksforgeeks.org/problems/power-of-numbers/0
 
 
 Dynamic Programming problems
 https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents/0
 https://practice.geeksforgeeks.org/problems/stickler-theif/0
+
+
+Topic need to be refered
+--------------------------------
+Comparable interface
+https://www.geeksforgeeks.org/greedy-algorithms/
+
+
+
+Pattern based problems:
+------------------------
+Refer this link for FANG problems => https://www.educative.io/courses/grokking-the-coding-interviews
+1.Sliding Window
+2.Two Pointers
+3.Fast & Slow pointers
+4.Merge Intervals
+5.Cyclic Sort
+6.In-place Reversal of a LinkedList
+7.Tree Breadth First Search
+8.Tree Depth First Search
+9.Two Heaps
+10.Subsets
+11.Modified Binary Search
+12.Bitwise XOR
+13.Top 'K' Elements
+14.K-way merge
+15.0/1 Knapsack (Dynamic Programming)
+16.Topological Sort (Graph)
+17.Kth Smallest Number
+
