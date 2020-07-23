@@ -1,8 +1,8 @@
 Unsolved
 10 => https://practice.geeksforgeeks.org/problems/valid-substring/0 => Solved
-13 => https://practice.geeksforgeeks.org/problems/game-with-string/0/
-25 => https://practice.geeksforgeeks.org/problems/closest-strings/0
-30 => https://practice.geeksforgeeks.org/problems/decode-it/0
+13 => https://practice.geeksforgeeks.org/problems/game-with-string/0/ => Solved
+25 => https://practice.geeksforgeeks.org/problems/closest-strings/0 => Solved
+30 => https://practice.geeksforgeeks.org/problems/decode-it/0 => Solved
 32 => https://practice.geeksforgeeks.org/problems/next-greater-even-number/0
 35 => https://practice.geeksforgeeks.org/problems/count-number-of-words/0
 61 => https://practice.geeksforgeeks.org/problems/amount-of-water/0
@@ -26,6 +26,7 @@ https://practice.geeksforgeeks.org/problems/power-of-numbers/0
 Dynamic Programming problems
 https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents/0
 https://practice.geeksforgeeks.org/problems/stickler-theif/0
+https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0/
 
 
 Topic need to be refered
