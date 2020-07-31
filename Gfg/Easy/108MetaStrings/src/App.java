@@ -1,27 +1,56 @@
-import java.util.HashMap;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+// https://practice.geeksforgeeks.org/problems/meta-strings/0/
+// Execution Time:0.18
 
 public class App 
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
-		int a = 10;
+		BufferedReader bi = new BufferedReader(new InputStreamReader(System.in));
 		
-		HashMap<Integer, Test> hashMap = new HashMap<Integer,Test>();
+		int testcasecount = Integer.parseInt(bi.readLine());
 		
-		Test tes = new Test();
-		tes.a = 1;
-		tes.b = 2;
+		while(testcasecount-- > 0)
+		{
+		    String a = bi.readLine().trim();
+		    String b = bi.readLine().trim();
+		    
+		    boolean isMetaString = false;
+		    
+		    if (!a.equals(b) && a.length() == b.length()) 
+		    {
+				char cha[] = a.toCharArray();
+				char chb[] = b.toCharArray();
+				
+				for (int i = 0; i < cha.length; i++) 
+				{
+					for (int j = 0; j < chb.length; j++) 
+					{
+						if (i != j && chb[j] == cha[i]) 
+						{
+							char tempB[] = b.toCharArray();
+							
+							tempB[j] = tempB[i];
+							tempB[i] = cha[i];
+							
+							if (new String(tempB).equals(a)) {
+								isMetaString = true;
+								i = a.length();
+								break;
+							}
+						}
+					}
+				}
+			} 
+		    
+		    System.out.println(isMetaString ? 1 : 0);
+		}
 		
-		hashMap.put(1, tes);
-		
-		System.out.println("Hello world" + a);
+		bi.close();
 	}
 	
 }
 
-class Test
-{
-	public int a;
-	public int b;
-}
