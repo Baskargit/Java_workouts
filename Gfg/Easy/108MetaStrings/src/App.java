@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 
 public class App 
 {
-
 	public static void main(String[] args) throws Exception 
 	{
 		BufferedReader bi = new BufferedReader(new InputStreamReader(System.in));

@@ -11,6 +11,7 @@ Unsolved
 84 => {DP} https://practice.geeksforgeeks.org/problems/four-elements/0 => Solved {BruteForce approach}
 86 => https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0
 104 => https://practice.geeksforgeeks.org/problems/decode-the-string/0 => Solved
+118 => https://practice.geeksforgeeks.org/problems/merge-list-alternatingly/1/
 
 TLE
 70 => https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
