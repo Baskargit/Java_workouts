@@ -1,9 +1,12 @@
+// https://practice.geeksforgeeks.org/problems/print-matrix-in-diagonal-pattern/1
+// Execution Time:0.8
+
 public class App {
     public static void main(String[] args) throws Exception 
     {
-        // int mat[][] = { {1,2,3}, {4,5,6}, {7,8,9}};
-        int mat[][] = { {1,2,3,4}, {5,6,7,8}, {9,10,11,12},{13,14,15,16}};
-        // int mat[][] = { {1,2}, {3,4}};
+        int mat[][] = { {1,2,3}, {4,5,6}, {7,8,9}};
+        //int mat[][] = { {1,2,3,4}, {5,6,7,8}, {9,10,11,12},{13,14,15,16}};
+        //int mat[][] = { {1,2}, {3,4}};
         printMatrixDiagonal(mat, mat.length);
         System.out.println();
     }
@@ -11,135 +14,34 @@ public class App {
     public static void printMatrixDiagonal(int mat[][], int n)
     {
         int length = n + n - 1;
-        int startI = 0,startJ =  n - 1;
-        int endI = 0,endJ = 0;
-        
+        boolean isUp = true;
+
         for (int i = 0; i < length; i++) 
         {
-            if (i < length) 
-            { 
-                int itemp = startI,jtemp = endJ;
+            int limitI,fromJ;
+            limitI = fromJ = (i < n) ? 0 : ((i - n) + 1);
 
-                do 
-                {
-                    System.out.print(mat[itemp--][jtemp++] + " ");
-                }
-                while (itemp != endI && jtemp != endJ);
+            int limitJ,fromI;
+            limitJ = fromI = (i < n) ? i : n - 1;
 
-                startI++;endJ++;
-            } 
-            else 
+            if (isUp) 
             {
-                startJ++;endI++;
-            }
-
-            System.out.println();
-        }
-
-        // print(mat, 0, 0, false);
-        // print1(mat, 0, 0, 0, 0, false);
-    }
-
-    
-    public static void print(int mat[][],int i,int j,boolean isUp)
-    {
-        if (i < mat.length && j < mat[0].length) 
-        {
-            if (i == 0 && j != mat.length - 1) 
-            {
-                System.out.print(mat[i][j] + " ");
-
-                if (j + 1 < mat[0].length) 
+                while (fromI != limitI && fromJ != limitJ) 
                 {
-                    System.out.print(mat[i][j+1] + " ");
-                    print(mat, i+1, j, false);
+                    System.out.print(mat[fromI--][fromJ++] + " ");
                 }
-                else
-                {
-                    print(mat, i+1, j-1, false);
-                }
-            }
-            else if (j == 0) 
-            {
-                System.out.print(mat[i][j] + " ");
-
-                if (i + 1 < mat.length)
-                {
-                    System.out.print(mat[i+1][j] + " ");
-                    print(mat, i, j+1, true);
-                }
-                else
-                {
-                    print(mat, i, j+1, true);
-                }
-            }
-            else if (j == mat.length - 1) 
-            {
-                System.out.print(mat[i][j] + " ");
-
-                if (i + 1 < mat.length) 
-                {
-                    System.out.print(mat[i+1][j] + " ");
-                    print(mat, i+2, j-1, false);
-                }
-                else
-                {
-                    print(mat, i+1, j+1, true);
-                }
-            }
-            else if (i == mat.length - 1) 
-            {
-                System.out.print(mat[i][j] + " ");
-                print(mat, i-1, j+2, true);
             }
             else
             {
-                if (isUp) 
+                while (limitI != fromI && limitJ  != fromJ) 
                 {
-                    System.out.print(mat[i][j] + " ");
-                    print(mat, i-1, j+1, true);    
-                }
-                else
-                {
-                    System.out.print(mat[i][j] + " ");
-                    print(mat, i+1, j-1, false);
+                    System.out.print(mat[limitI++][limitJ--] + " ");
                 }
             }
-        }
-    }
 
-    // Half implemented function
-    public static void print1(int mat[][],int row,int col,int i,int j,boolean isUp)
-    {
-        if (row < mat.length) 
-        {
-            if (i >=0 && j < mat[0].length) 
-            {
-                System.out.print(mat[i][j]);
-                print1(mat, row, col, i-1, j+1, isUp);
-            }
-            else
-            {
-                if (row + 1 < mat.length) 
-                {
-                    print1(mat, row+1, col, row+1, 0, false);
-                }
-                else
-                {
-                    print1(mat, row+1, col, row+1, 0, false);
-                }
-            }
-        }
-        else
-        {
-            if (col < mat[0].length) 
-            {
-                if (i >=0 && j < mat[0].length) 
-                {
-                    System.out.print(mat[i][j]);
-                    print1(mat, row, col, i-1, j+1, isUp);
-                }
-            }
+            System.out.print(mat[fromI][fromJ] + " ");
+
+            isUp = !isUp;
         }
     }
 

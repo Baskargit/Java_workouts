@@ -1,0 +1,27 @@
+Topic need to be refered
+--------------------------------
+Comparable interface
+https://www.geeksforgeeks.org/greedy-algorithms/
+
+
+
+Pattern based problems:
+------------------------
+Refer this link for FANG problems => https://www.educative.io/courses/grokking-the-coding-interviews
+1.Sliding Window
+2.Two Pointers
+3.Fast & Slow pointers
+4.Merge Intervals
+5.Cyclic Sort
+6.In-place Reversal of a LinkedList
+7.Tree Breadth First Search
+8.Tree Depth First Search
+9.Two Heaps
+10.Subsets
+11.Modified Binary Search
+12.Bitwise XOR
+13.Top 'K' Elements
+14.K-way merge
+15.0/1 Knapsack (Dynamic Programming)
+16.Topological Sort (Graph)
+17.Kth Smallest Number
