@@ -3,5 +3,7 @@ https://practice.geeksforgeeks.org/problems/count-the-reversals/0
 https://practice.geeksforgeeks.org/problems/sub-array-sum-divisible-by-k/0
 https://practice.geeksforgeeks.org/problems/power-of-numbers/0
 https://practice.geeksforgeeks.org/problems/largest-subarray-of-0s-and-1s/1
+https://practice.geeksforgeeks.org/problems/string-modification-1587115621/1
+https://practice.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1
 
 Medium
