@@ -15,11 +15,13 @@ Unsolved
 146 => https://practice.geeksforgeeks.org/problems/sorted-subsequence-of-size-3/1 => Time complexity issue
 152 => https://practice.geeksforgeeks.org/problems/modify-linked-list-1/1
 153 => https://practice.geeksforgeeks.org/problems/max-sum-path-in-two-arrays/1
+161 => https://practice.geeksforgeeks.org/problems/mountain-subarray-problem/1
 
 TLE
 70 => https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
 77 => https://practice.geeksforgeeks.org/problems/flip-bits/0
 81 => https://practice.geeksforgeeks.org/problems/maximum-occured-integer/0
+164 => https://practice.geeksforgeeks.org/problems/subtraction-in-linked-list/1
 
 
 Dynamic Programming problems
