@@ -1,0 +1,3 @@
+Easy links (Top 3-Tier companies)
+https://practice.geeksforgeeks.org/explore/?company%5B%5D=Amazon&company%5B%5D=Microsoft&company%5B%5D=Adobe&company%5B%5D=Accolite&company%5B%5D=Samsung&company%5B%5D=Zoho&company%5B%5D=Paytm&company%5B%5D=Goldman%20Sachs&company%5B%5D=Snapdeal&company%5B%5D=Google&company%5B%5D=Flipkart&company%5B%5D=Morgan%20Stanley&company%5B%5D=Walmart&company%5B%5D=D-E-Shaw&company%5B%5D=Oracle&company%5B%5D=Facebook&company%5B%5D=Qualcomm&company%5B%5D=Yahoo&company%5B%5D=Apple&company%5B%5D=Intel&company%5B%5D=Thoughtworks&problemType=functional&difficulty%5B%5D=0&page=1
+
