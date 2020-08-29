@@ -8,3 +8,4 @@ https://practice.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1
 https://practice.geeksforgeeks.org/problems/points-in-straight-line/1
 
 Medium
+https://practice.geeksforgeeks.org/problems/maximum-intervals-overlap/0/
