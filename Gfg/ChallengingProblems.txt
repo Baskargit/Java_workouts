@@ -10,3 +10,5 @@ https://practice.geeksforgeeks.org/problems/points-in-straight-line/1
 Medium
 https://practice.geeksforgeeks.org/problems/maximum-intervals-overlap/0/
 https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle/0
+https://practice.geeksforgeeks.org/problems/make-matrix-beautiful-1587115620/1/?difficulty[]=1&page=1&query=difficulty[]1page1
+https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1/?difficulty[]=1&page=1&query=difficulty[]1page1
