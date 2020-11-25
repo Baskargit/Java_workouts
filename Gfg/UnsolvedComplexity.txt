@@ -1,0 +1,6 @@
+Problems of All types whose Complexity is Unsolved (Problem got solved and Submitted)
+
+MED => 18 => https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1/?difficulty[]=1&page=1&query=difficulty[]1page1#
+MED => 19 => https://practice.geeksforgeeks.org/problems/word-break1352/1/?difficulty[]=1&page=1&query=difficulty[]1page1#
+MED => 22 => https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1/?difficulty[]=1&page=2&query=difficulty[]1page2#
+MED => 28 => https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#

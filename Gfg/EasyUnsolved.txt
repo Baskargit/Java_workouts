@@ -16,20 +16,3 @@ Unsolved
 152 => https://practice.geeksforgeeks.org/problems/modify-linked-list-1/1
 153 => https://practice.geeksforgeeks.org/problems/max-sum-path-in-two-arrays/1
 161 => https://practice.geeksforgeeks.org/problems/mountain-subarray-problem/1
-
-TLE
-70 => https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
-77 => https://practice.geeksforgeeks.org/problems/flip-bits/0
-81 => https://practice.geeksforgeeks.org/problems/maximum-occured-integer/0
-164 => https://practice.geeksforgeeks.org/problems/subtraction-in-linked-list/1
-165 => https://practice.geeksforgeeks.org/problems/product-array-puzzle0852/1
-
-
-Dynamic Programming problems
-https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents/0
-https://practice.geeksforgeeks.org/problems/stickler-theif/0
-https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0/
-
-Problems of All types whose Complexity is Unsolved (Problem got solved)
-MED => 18 => https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1/?difficulty[]=1&page=1&query=difficulty[]1page1#
-MED => 19 => https://practice.geeksforgeeks.org/problems/word-break1352/1/?difficulty[]=1&page=1&query=difficulty[]1page1#
