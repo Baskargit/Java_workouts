@@ -16,3 +16,5 @@ Unsolved
 152 => https://practice.geeksforgeeks.org/problems/modify-linked-list-1/1
 153 => https://practice.geeksforgeeks.org/problems/max-sum-path-in-two-arrays/1
 161 => https://practice.geeksforgeeks.org/problems/mountain-subarray-problem/1
+166 => https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1# => Time complexity issue {Logic correct}
+167 => https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1# => Time complexity issue {Logic correct}

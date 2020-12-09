@@ -4,3 +4,5 @@
 20 => https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1/?difficulty[]=1&page=1&query=difficulty[]1page1
 25 => https://practice.geeksforgeeks.org/problems/number-following-a-pattern/0/?difficulty[]=1&page=2&query=difficulty[]1page2
 26 => https://practice.geeksforgeeks.org/problems/form-coils-in-a-matrix/0/?difficulty[]=1&page=2&query=difficulty[]1page2#
+31 => https://practice.geeksforgeeks.org/problems/minimum-swaps/1/?difficulty[]=1&page=2&query=difficulty[]1page2
+34 => https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1

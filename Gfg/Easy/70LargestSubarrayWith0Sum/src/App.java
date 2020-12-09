@@ -1,8 +1,9 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 
 // https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1/
-// Expected Time Limit < 3.736sec
+// Execution Time:1.44
 // Functional problem
 
 public class App 
@@ -23,32 +24,42 @@ public class App
 
             for (int i = 0; i < n; i++) 
             {
-                numbers[i] = Integer.parseInt(string[i]);    
+                numbers[i] = Integer.parseInt(string[i]);
+                
+                if (numbers[i] == 0) 
+                {
+                    numbers[i] = -1;
+                }
             }
 
-            System.out.println(maxLen(numbers, n));
+            System.out.println(maxLen(numbers, numbers.length));
         }
     }
 
     // Old function
     public static int maxLen(int arr[], int n)
     {
-        int maxLength = 0;
+        HashMap<Integer,Integer> hashMap = new HashMap<Integer,Integer>();
+        int maxLength = 0,sum = 0;
 
-        int temArray[] = new int[n];
-
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < arr.length; i++) 
         {
-            temArray[i] = arr[i];
+            sum += arr[i];
 
-            for (int j = 0; j < i; j++) 
+            if (sum == 0) 
             {
-                temArray[j] += arr[i];
-
-                if (temArray[j] == 0) 
+                maxLength = i+1;    
+            }
+            else
+            {
+                if (hashMap.containsKey(sum)) 
                 {
-                    int len = (i - j) + 1;
-                    maxLength = (len > maxLength) ? len : maxLength;    
+                    int prevLength = i - hashMap.get(sum);
+                    maxLength = (prevLength > maxLength) ? prevLength : maxLength;
+                }
+                else
+                {
+                    hashMap.put(sum, i);
                 }
             }
         }
